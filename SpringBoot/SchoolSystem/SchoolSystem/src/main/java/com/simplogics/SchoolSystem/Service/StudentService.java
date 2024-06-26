@@ -10,23 +10,23 @@ public class StudentService {
     @Autowired
     private IStudentRepository studentRepository;
 
-    public Student saveProduct(Student product){
-        return studentRepository.save(product);
+    public Student saveStudent(Student Student){
+        return studentRepository.save(Student);
     }
 
-    public Student updateProduct(Student product){
-        return studentRepository.save(product);
+    public Student updateStudent(Student Student){
+        return studentRepository.save(Student);
     }
 
-    public List<Student> getProducts() {
+    public List<Student> getStudents() {
         return studentRepository.findAll();
     }
 
-    public Student getProductById(Integer id){
+    public Student getStudentById(Integer id){
         return studentRepository.findById(id).orElse(null);
     }
 
-    public String deleteProduct(Integer id){
+    public String deleteStudent(Integer id){
         studentRepository.deleteById(id);
         return "STUDENT DELETED";
     }
