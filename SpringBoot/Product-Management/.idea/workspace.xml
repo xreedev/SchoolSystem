@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8ebb8c7-2a11-4ec1-b0df-5f50d2fbdbca" name="Changes" comment="created ProductControl">
-      <change beforePath="$PROJECT_DIR$/Product-Management/src/main/java/com/simplogics/Product_Management/Control/ProductControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Management/src/main/java/com/simplogics/Product_Management/Control/ProductControl.java" afterDir="false" />
+    <list default="true" id="d8ebb8c7-2a11-4ec1-b0df-5f50d2fbdbca" name="Changes" comment="Project complete,tested successfully">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dell/Pictures/Desktop/Simplogics/SpringBoot/Product-Management"
+    "last_opened_file_path": "C:/Users/dell/Pictures/Desktop/Simplogics/SpringBoot/SchoolSystem"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -137,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719393681864</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Project complete,tested successfully">
+      <option name="closed" value="true" />
+      <created>1719394071013</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719394071013</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +168,7 @@
     <MESSAGE value="created product repository" />
     <MESSAGE value="created ProductService" />
     <MESSAGE value="created ProductControl" />
-    <option name="LAST_COMMIT_MESSAGE" value="created ProductControl" />
+    <MESSAGE value="Project complete,tested successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project complete,tested successfully" />
   </component>
 </project>
