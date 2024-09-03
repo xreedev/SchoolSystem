@@ -1,5 +1,6 @@
 package com.simplogics.SchoolSystem.Control;
 
+import com.simplogics.SchoolSystem.Configs.ApiRoutes;
 import com.simplogics.SchoolSystem.Model.Teacher;
 import com.simplogics.SchoolSystem.Service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,32 +8,32 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RestController
 public class TeacherControl {
     @Autowired
-    TeacherService TeacherService;
+    TeacherService teacherService;
 
-    @PostMapping("/createTeacher")
+    @PostMapping()
     public Teacher addTeacher(@RequestBody Teacher Teacher){
-        return TeacherService.saveTeacher(Teacher);
+        return teacherService.saveTeacher(Teacher);
     }
 
-    @PutMapping("/saveTeacher")
+    @PutMapping()
     public Teacher saveTeacher(@RequestBody Teacher Teacher){
-        return TeacherService.saveTeacher(Teacher);
+        return teacherService.saveTeacher(Teacher);
     }
 
-    @GetMapping("/getTeacher/{id}")
+    @GetMapping(ApiRoutes.ID)
     public Teacher getTeacher(@PathVariable Integer id){
-        return TeacherService.getTeacherById(id);
+        return teacherService.getTeacherById(id);
     }
 
-    @GetMapping("/getAll")
+    @GetMapping()
     public List<Teacher> getTeachers(){
-        return TeacherService.getTeachers();
+        return teacherService.getTeachers();
     }
 
-    @DeleteMapping("/delete/{id}")
-    public String deleteTeacher(@PathVariable Integer id){
-        return TeacherService.deleteTeacher(id);
-    }
+    @DeleteMapping(ApiRoutes.ID)
+    public void deleteTeacher(@PathVariable Integer id){
+        teacherService.deleteTeacher(id);}
 }
