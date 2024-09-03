@@ -29,11 +29,8 @@ public class TeacherControl {
     }
 
     @GetMapping()
-    public List<Teacher> getTeachers(){
-        return teacherService.getTeachers();
-    }
+    public List<Teacher> getTeachers(){return teacherService.getTeachers();}
 
     @DeleteMapping(ApiRoutes.ID)
-    public void deleteTeacher(@PathVariable Integer id){
-        teacherService.deleteTeacher(id);}
+    public void deleteTeacher(@PathVariable Integer id){teacherService.deleteTeacher(id);}
 }
