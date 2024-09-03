@@ -5,7 +5,6 @@ import com.simplogics.SchoolSystem.Model.Teacher;
 import com.simplogics.SchoolSystem.Service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
